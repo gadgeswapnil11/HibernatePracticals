@@ -21,7 +21,7 @@ public class ProjectionDemo {
 		cfg.configure("hibernateConnectivityDay6.xml");
 
 		SessionFactory sf = cfg.buildSessionFactory();
-		Session session = sf.openSession();
+		Session session = sf.openSession(); 
 
 		Criteria cr = session.createCriteria(Student.class);
 
@@ -34,10 +34,11 @@ public class ProjectionDemo {
 		/* ------ Projection with Restriction ------- */
 
 		Projection pr1 = Projections.property("name");
+	
 		cr.setProjection(pr1);
 
-		Criterion rs = Restrictions.eq("id", 2);
-
+		Criterion rs = Restrictions.eq("id", 2);   
+		
 		cr.add(rs);
 		String str = (String) cr.uniqueResult();
 		System.out.println(str);

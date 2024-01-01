@@ -36,8 +36,8 @@ public class Test {
 		addlist.add(address);
 		addlist.add(address1);
 		
-		s1.setAddresses(addlist);
-		
+		s1.setAddresses(addlist);  
+		    
 		session.save(s1);
 		session.save(address);
 		session.save(address1);

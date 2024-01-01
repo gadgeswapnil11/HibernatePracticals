@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Student_db22")
+@Table(name = "student_db22")
 
 public class Student {
 	
@@ -22,7 +22,7 @@ public class Student {
 	@Column(name = "sid")
 	private int id;
 	@Column(name = "sname")
-	private String name;
+	private String name; 
 	@Column(name = "semail")
 	private String email;
 

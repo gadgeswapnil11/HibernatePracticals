@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "employeeHbDb")
 
-public class Employee_DbHb {
+public class Employee_DbHb  extends day1{
 	public Employee_DbHb(int id, String name, String mail) {
 		super();
 		this.id = id;

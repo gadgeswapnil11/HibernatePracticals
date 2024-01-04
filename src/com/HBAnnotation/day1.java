@@ -10,7 +10,7 @@ public class day1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Configuration cfg = new Configuration(); 
+		Configuration cfg = new Configuration();
 		cfg.configure("hb.Annotation.cfg.xml");
 
 		SessionFactory sf = cfg.buildSessionFactory();// table created here
@@ -32,10 +32,11 @@ public class day1 {
 		session.save(s5);
 		session.save(s6);
 		txn.commit();
-		
-		
-		 
 
 	}
+
+	protected void adds() {
+		System.out.println("Hello Protected");
+	} 
 
 }

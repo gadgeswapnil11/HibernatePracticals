@@ -1,9 +1,14 @@
 package com.HBAnnotation;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+
+import antlr.collections.List;
 
 public class day1 {
 
@@ -32,11 +37,15 @@ public class day1 {
 		session.save(s5);
 		session.save(s6);
 		txn.commit();
+		
+		
+
+		
 
 	}
 
 	protected void adds() {
 		System.out.println("Hello Protected");
 	} 
-
+	
 }
